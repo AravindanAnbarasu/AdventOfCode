@@ -67,38 +67,6 @@ pair<long long, long long> analyse_line(string& line) //find first illegal chara
 	return pair;
 }
 
-/*long long part2(string &line) //find first illegal character
-{
-	std::vector<char> v;
-	auto total_score = 0LL;
-
-	string s = "([{<";
-
-	for (auto c : line)
-	{
-		switch (c)
-		{
-		case '{':
-		case '<':
-		case '[':
-		case '(':
-			v.push_back(c);
-			continue;
-		}
-
-		v.pop_back(); // remove the item if no error
-	}
-
-	while (!v.empty())  //we have all the open brackets without a pair in the vector
-	{
-		total_score = total_score * 5 + s.find(v.back()) + 1;
-		v.pop_back();
-	}
-
-	return total_score;
-}*/
-
-
 int main()
 {
 	string line;
